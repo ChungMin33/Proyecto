@@ -46,7 +46,6 @@ def random_card():
     b = randint(0,12)
     carta_random = masos_total[a][b]
     return carta_random
-print(random_card())
 #valores de cartas
 
 """if "2" in carta_random:
@@ -73,4 +72,19 @@ elif "Q" in carta_random:
     valor = 12
 elif "K" in carta_random:
     valor = 13"""
+
+numeros = ["2","3","4","5","6","7","8","9",]
+print(carta_random)
+for i in numeros:
+    if i in carta_random:
+        valor = int(i)
+        resultado = 10 - valor
+
+letras = ["T","J","Q","K"]
+for i in letras:
+    if i in carta_random:
+        valor = 10
+
+if "A" in carta_random:
+    valor = 1
 
